@@ -8,6 +8,9 @@
 .header {
   background-color: rgb(132, 123, 55);
   text-align: center;
+  position: fixed;
+  width: 100vw;
+  z-index: 999;
 }
 .container {
   display: flex;
@@ -15,6 +18,7 @@
   align-items: center;
   flex-direction: column;
   background-color: rgb(34, 168, 217);
+  height: 100vh;
 }
 
 .card {
@@ -27,6 +31,7 @@
   margin: auto; /* Center the card horizontally within the container */
   display: flex;
   flex-direction: column;
+  margin-top: 75px;
 }
 .answer {
   width: 25vw;
@@ -37,7 +42,24 @@
 p {
   text-align: center;
 }
-/* 1.- there must be a syntax error or something with higher
+.nav {
+  display: flex;
+  flex-direction: row;
+  z-index: 99;
+  justify-content: space-evenly;
+  background-color: rgb(132, 123, 55);
+}
+/*IMPORTANT: I need an explanation about how classes prioritize,
+example: tried to write the "nav" class next to footer, but
+stopped affecting the footer, had to write it next to nav. 
+1.- there must be a syntax error or something with higher
 specificity, I can't change the "container" class using
 .container, only using main.
+after copy-pasting a chunk of code, now it works. But I'd still
+like to know why can not work sometimes.
+2.- Bookmarks, how do I link them.
+3.- Center "Show Answer"
+4.- Give ".options" background color
+5.- Insert logos in nav bar, fix it to the bottom. Right now
+if I use position fixed, it dissappears. 
  */
