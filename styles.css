@@ -11,6 +11,7 @@
   position: fixed;
   width: 100vw;
   z-index: 999;
+  color: blanchedalmond;
 }
 .container {
   display: flex;
@@ -28,7 +29,7 @@
   padding: 5px;
   gap: 5px;
   width: 75%;
-  margin: auto; /* Center the card horizontally within the container */
+  margin: auto;
   display: flex;
   flex-direction: column;
   margin-top: 75px;
@@ -48,18 +49,45 @@ p {
   z-index: 99;
   justify-content: space-evenly;
   background-color: rgb(132, 123, 55);
+  padding: 10px;
+  position: sticky;
+  z-index: 99999999;
 }
-/*IMPORTANT: I need an explanation about how classes prioritize,
+.navlogo {
+  height: 35px;
+}
+.book {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  right: 80px;
+  margin-top: -13px;
+}
+/*
+ALGO ESTOY HACIENDO MAL CON LA SINTAXIS EN EL HTML, LAS CLASES
+NO AFECTAN A LO QUE DEBERÍAN, ACABO TENIENDO QUE HACER ENSAYO/
+ERROR.
+POSIBLEMENTE LA "LONGITUD" DE LA PÁGINA ESTÁ MAL TOCADA. PUSE
+100vh EN EL .container, NO SÉ SI ESO ES CORRECTO, O ES UNA 
+CHAPUZA.
+MISMO PROBLEMA DE SINTAXIS PARA COLOCAR LOS BOOKMARS EN LAS
+CARDS, TENGO LA CLASE .book DENTRO DE img Y ACTÚA COMO SI 
+ESTUVIESE EN CONTAINER, EN VEZ DE MOVERSE
+DENTRO DE .card. LO CONSEGUÍ CON margin-top PERO CHAPUZA!!!!!!!
+IMPORTANT: I need an explanation about how classes prioritize,
 example: tried to write the "nav" class next to footer, but
-stopped affecting the footer, had to write it next to nav. 
+stopped affecting the footer, had to write it next to nav.
+Related to point number 1. 
 1.- there must be a syntax error or something with higher
 specificity, I can't change the "container" class using
 .container, only using main.
 after copy-pasting a chunk of code, now it works. But I'd still
 like to know why can not work sometimes.
-2.- Bookmarks, how do I link them.
+2.- Bookmarks, how do I link them. (I did it with img, is there
+a better way?)
 3.- Center "Show Answer"
 4.- Give ".options" background color
 5.- Insert logos in nav bar, fix it to the bottom. Right now
-if I use position fixed, it dissappears. 
+if I use position fixed, it dissappears. Using sticky for
+the time being, possible syntaxis problem.
  */
