@@ -29,14 +29,14 @@
   border: solid;
   border-radius: 15px;
   border-color: blanchedalmond;
-  gap: 15px;
+  gap: 20px;
   width: 50vw;
   display: flex;
   flex-direction: column;
   position: relative;
   align-items: center;
   padding: 25px;
-  margin: 5px;
+  margin: 15px;
 }
 .answer {
   width: 20vw;
@@ -104,3 +104,10 @@ probably not the way to do it).
 if I use position fixed, it dissappears. Using sticky for
 the time being, possible syntaxis problem.
 */
+/* 
+Things I've left behind:
+- space between .button
+- color .button
+- profile site
+- some hoovering features maybe
+ */
