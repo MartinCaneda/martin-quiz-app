@@ -28,7 +28,7 @@
 .card {
   border: solid;
   border-radius: 15px;
-  border-color: black;
+  border-color: blanchedalmond;
   padding: 5px;
   gap: 5px;
   width: 50vw;
@@ -36,11 +36,13 @@
   flex-direction: column;
   position: relative;
   align-items: center;
+  padding: 25px;
 }
 .answer {
   width: 25vw;
   background-color: rgb(132, 123, 55);
   border-radius: 10px;
+  gap: 10px;
 }
 p {
   text-align: center;
