@@ -29,17 +29,17 @@
   border: solid;
   border-radius: 15px;
   border-color: blanchedalmond;
-  padding: 5px;
-  gap: 5px;
+  gap: 15px;
   width: 50vw;
   display: flex;
   flex-direction: column;
   position: relative;
   align-items: center;
   padding: 25px;
+  margin: 5px;
 }
 .answer {
-  width: 25vw;
+  width: 20vw;
   background-color: rgb(132, 123, 55);
   border-radius: 10px;
   gap: 10px;
@@ -71,6 +71,7 @@ p {
 }
 .button {
   align-self: flex-start;
+  color: rgb(132, 123, 55);
 }
 /*
 ALGO ESTOY HACIENDO MAL CON LA SINTAXIS EN EL HTML, LAS CLASES
