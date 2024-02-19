@@ -1,15 +1,15 @@
-document.addEventListener("DOMContentLoaded", function () {
-  var iconElement = document.querySelector(".question-card__icon");
-
-  iconElement.addEventListener("click", function () {
-    if (iconElement.src.endsWith("bookmark.png")) {
-      iconElement.src = "./assets/bookmark_filled.png";
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleBookmark = document.querySelector(
+    '[data-js="question-card__icon"]'
+  );
+  toggleBookmark.addEventListener("click", () => {
+    if (toggleBookmark.src.endsWith("bookmark.png")) {
+      toggleBookmark.src = "./assets/bookmark_filled.png";
     } else {
-      iconElement.src = "./assets/bookmark.png";
+      toggleBookmark.src = "./assets/bookmark.png";
     }
   });
 });
-
 function toggleAnswer(button) {
   var answerElement = button.nextElementSibling;
 

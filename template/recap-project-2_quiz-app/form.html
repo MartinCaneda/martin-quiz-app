@@ -6,45 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css" />
-    <script src="js/index.js"></script>
+    <script src="js/form.js"></script>
   </head>
   <body>
     <header>
       <h1>Quiz App</h1>
     </header>
-    <main>
-      <form action="">
+    <main id="cardContainer">
+      <form class="form" data-js="form" id="myForm">
         <label for="question">Your question</label>
-        <textarea name="question" id="question" cols="30" rows="10"></textarea>
+        <textarea
+          name="question"
+          id="newQuestion"
+          cols="30"
+          rows="10"
+        ></textarea>
         <label for="answer">Your answer</label>
-        <textarea name="answer" id="answer" cols="30" rows="10"></textarea>
-        <input type="text" />
-        <button type="submit">Submit</button>
+        <textarea name="answer" id="newAnswer" cols="30" rows="10"></textarea>
+        <input type="text" id="newTags" />
+        <button type="submit" data-js="button-submit">Submit</button>
       </form>
-      <!--     <section class="question-card">
-                <img
-                  class="question-card__icon"
-                  src="./assets/bookmark.png"
-                  alt="bookmark"
-                />
-                <h2 class="question-card__title">
-                  What are the different position property values?
-                </h2>
-                <button class="question-card__button">show answer</button>
-                <p class="question-card__answer"></p>
-                <div class="question-card__tags">
-                  <div class="question-card__tag">#html</div>
-                  <div class="question-card__tag">#css</div>
-                  <div class="question-card__tag">#position</div>
-                </div>
-              </section> -->
+      <section data-js="card-submit" class="question-card"></section>
     </main>
     <footer class="footer">
-      <a href="index.html" class="footer__link footer__link--active">
+      <a href="index.html" class="footer__link">
         <img
-          class="footer__icon footer__icon--filled"
-          src="./assets/home_filled.png"
-          alt="home filled"
+          class="footer__icon footer__icon"
+          src="./assets/home.png"
+          alt="home"
         />
       </a>
       <a href="bookmark.html" class="footer__link">
@@ -54,7 +43,7 @@
           alt="bookmark"
         />
       </a>
-      <a href="form.html" class="footer__link">
+      <a href="form.html" class="footer__link footer__link--active">
         <img class="footer__icon" src="./assets/add_filled.png" alt="add" />
       </a>
       <a href="profile.html" class="footer__link">
