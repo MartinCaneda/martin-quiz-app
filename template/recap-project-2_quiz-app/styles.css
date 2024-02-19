@@ -2,3 +2,7 @@
 @import "./css/components.css";
 @import "./css/pages-home.css";
 @import "./css/pages-profile.css";
+
+.form {
+  display: grid;
+}
