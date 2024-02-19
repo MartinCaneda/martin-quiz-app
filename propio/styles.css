@@ -70,7 +70,13 @@ p {
   right: 15px;
 }
 .button {
+  display: flex;
   align-self: flex-start;
+  gap: 5px;
+}
+button {
+  background-color: blanchedalmond;
+  border-radius: 5px;
 }
 /*
 A
@@ -110,4 +116,7 @@ Things I've left behind:
 - color .button
 - profile site
 - some hoovering features maybe
+- changing background color on the footer, behind the logos 
+whe you click them
+
  */
