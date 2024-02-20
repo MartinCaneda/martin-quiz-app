@@ -75,3 +75,7 @@ section {
 .footer__link.footer__link--active {
   background-color: var(--active-color);
 }
+#form {
+  color: red;
+}
+

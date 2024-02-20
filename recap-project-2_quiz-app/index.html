@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css" />
+    <script src="js/index.js"></script>
   </head>
   <body>
     <header>
@@ -17,12 +18,15 @@
           class="question-card__icon"
           src="./assets/bookmark.png"
           alt="bookmark"
+          data-js="question-card__icon"
         />
         <h2 class="question-card__title">
           What property flips the axes of flexbox
         </h2>
-        <button class="question-card__button">show answer</button>
-        <p class="question-card__answer"></p>
+        <button class="question-card__button" onclick="toggleAnswer(this)">
+          show answer
+        </button>
+        <p class="question-card__answer hidden">#Got ya!</p>
         <div class="question-card__tags">
           <div class="question-card__tag">#html</div>
           <div class="question-card__tag">#css</div>
@@ -76,6 +80,12 @@
           alt="bookmark"
         />
       </a>
+      <a href="form.html" class="footer__link">
+        <img 
+          class="footer__icon" 
+          src="./assets/add.png" 
+          alt="add" 
+          />
       <a href="profile.html" class="footer__link">
         <img class="footer__icon" src="./assets/profile.png" alt="profile" />
       </a>
