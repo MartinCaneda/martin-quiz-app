@@ -59,4 +59,18 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
+  const questionInput = document.getElementById("newQuestion");
+  const answerInput = document.getElementById("newAnswer");
+
+  questionInput.addEventListener("input", () => {
+    const length = questionInput.value.length;
+    const charCount = 150 - length;
+    qLeft.textContent = `${charCount} characters left`;
+  });
+
+  answerInput.addEventListener("input", () => {
+    const length = answerInput.value.length;
+    const charCount = 150 - length;
+    aLeft.textContent = `${charCount} characters left`;
+  });
 });

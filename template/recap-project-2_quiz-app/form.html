@@ -20,9 +20,12 @@
           id="newQuestion"
           cols="30"
           rows="10"
+          maxlength="150"
         ></textarea>
+        <p id="qLeft">150 characters left</span></p>
         <label for="answer">Your answer</label>
-        <textarea name="answer" id="newAnswer" cols="30" rows="10"></textarea>
+        <textarea name="answer" id="newAnswer" cols="30" rows="10" maxlength="150"></textarea>
+        <p id="aLeft">150 characters left</span></p>
         <input type="text" id="newTags" />
         <button type="submit" data-js="button-submit">Submit</button>
       </form>
